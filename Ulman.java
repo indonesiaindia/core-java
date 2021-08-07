@@ -1,16 +1,28 @@
-class Coffee
+//error comes no output came
+//graded question encapsulation
+public class Ulman 
 {
-   protected void order()
-    {
-        System.out.println("Coffee");
-    }
+public static void main(String[] args) 
+{
+TestClass c1 = new TestClass(2, 5.2);
+TestClass c2 = new TestClass(3, 7.5);
+System.out.println(c1.a + ", " + c1.b);
+}
+}
+class TestClass 
+{
+private int a;
+public double b;
+public TestClass(int first, double second) 
+{
+this.a = first;
+this.b = second;
+}
 }
 
-public class Ulman extends Coffee
-{
-   public static void main(String args[])
-   {  
-       Cappuccino c = new Cappuccino();  
-       c.order();  
-   }      
-}
+
+
+
+
+
+
